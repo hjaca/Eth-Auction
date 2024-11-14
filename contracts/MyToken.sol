@@ -21,6 +21,8 @@ contract MyToken is ERC721("MiToken", "MTNFT") {
 
     uint count = 1;
 
+    uint256 nuevo = 0;
+
     function mint() payable external {
         _mint(msg.sender, count);
         count++;

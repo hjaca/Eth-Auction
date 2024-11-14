@@ -749,11 +749,11 @@
 			]
 		},
 		"contracts/MyToken.sol": {
-			"keccak256": "0x1677cae540225527ac8082062966ddecf79ef3ea7a74627faf51a1e2e30b8926",
+			"keccak256": "0x6323a0b97653096fbe4db278f473236b1badf703180fa9171f3e39766754df84",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://4afebc1d678fbcf3580992c3865fa91deaf00c31657ae8c9f65a3e85ac553222",
-				"dweb:/ipfs/QmPeqsN19HrgzUYMwheDswUNrCraHY5m8D6TTLirNpsCf5"
+				"bzz-raw://083662b17a0c993f234e37cfc71312a30ce1330e87e12dedeb7f30993dd5b636",
+				"dweb:/ipfs/QmapFxNKpou8T24VDh5Nf5hwLNWqzjzvEJkbsdJuhpz3RQ"
 			]
 		}
 	},
