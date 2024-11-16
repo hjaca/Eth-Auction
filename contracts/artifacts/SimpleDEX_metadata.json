@@ -9,12 +9,48 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "addToken_A",
+						"name": "addTokenA",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "addTokenB",
 						"type": "address"
 					}
 				],
 				"stateMutability": "nonpayable",
 				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amountA",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amountB",
+						"type": "uint256"
+					}
+				],
+				"name": "addLiquidity",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_token",
+						"type": "address"
+					}
+				],
+				"name": "getPrice",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
 			},
 			{
 				"inputs": [],
@@ -27,6 +63,50 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amountA",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amountB",
+						"type": "uint256"
+					}
+				],
+				"name": "removeLiquidity",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amountAIn",
+						"type": "uint256"
+					}
+				],
+				"name": "swapAforB",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amountBIn",
+						"type": "uint256"
+					}
+				],
+				"name": "swapBforA",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -66,11 +146,11 @@
 			]
 		},
 		"contracts/Dex.sol": {
-			"keccak256": "0x722c6ec17cbb9e9143eff6120eb315ed68e9f9c7f537305fede8bc6f98606c0f",
+			"keccak256": "0x30c266c9d1e671a35027627b6fed9ab1e244c2741aaf3da2d832e3fbbaf452e2",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://782bab7ea1316e1825f72f947a9c2dc8bfb9a78c30fa802ef5f3cf860f72403c",
-				"dweb:/ipfs/QmUm9SDqWT634PWrnkGM1MFxRVJi4rY7eKEzamgpWuhh7x"
+				"bzz-raw://06d1298a9238a9717087fb0bec28dff68fd906ba4f97b989a098ca77c2466468",
+				"dweb:/ipfs/QmXnvA4aRa4nBpHEbtGHJpTwWo6LqSxEpumxLSBMrcXVrB"
 			]
 		}
 	},

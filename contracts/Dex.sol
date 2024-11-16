@@ -32,14 +32,30 @@ contract SimpleDEX {
     // var definition
     bool public isActive;
 
-    IERC20 token_A;
-    IERC20 token_B;
+    IERC20 tokenA;
+    IERC20 tokenB;
 
     // constructor
-    constructor (address addToken_A) {
-       token_A = IERC20(addToken_A);
-       // token-B = IERC20(addToken-B);
+    constructor (address addTokenA, address addTokenB) {
+       tokenA = IERC20(addTokenA);
+       tokenB = IERC20(addTokenB);
       
     }
 
+    // functions
+    function addLiquidity(uint256 amountA, uint256 amountB) public {
+    }
+
+    function swapAforB(uint256 amountAIn) public {
+    }
+     
+    function swapBforA(uint256 amountBIn) public {
+    }
+        
+    function removeLiquidity(uint256 amountA, uint256 amountB) public {
+    }
+    
+    function getPrice(address _token) public {
+    }
+    
 }
