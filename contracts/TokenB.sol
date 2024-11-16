@@ -5,11 +5,12 @@ pragma solidity >=0.7.0 <0.9.0;
 //pragma solidity ^0.8.0;
 
 /**
- * @title DEX 
- * @dev Token contract for Eth course - Hugo Jaca
+ * @title TokenA 
+ * @dev Token A contract for Eth course - Hugo Jaca
  * Funciones:
- *      Constructor. Inicializa la subasta con los parámetros necesario para su funcionamiento.
+ *      Constructor. Inicializa el token
  * Eventos:
+ *
  *      Crear dos tokens ERC-20 simples: Los contrato de los tokens deben tener obligatoriamente los nombres TokenA y TokenB.
  *      Implementar un contrato de exchange (denominado obligatoriamente SimpleDEX) que:
  *         Mantenga un pool de liquidez para TokenA y TokenB.
@@ -26,20 +27,10 @@ pragma solidity >=0.7.0 <0.9.0;
  *      Incluir los eventos que consideren convenientes.
  */
 
-import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
-contract SimpleDEX {
-    // var definition
-    bool public isActive;
-
-    IERC20 token_A;
-    IERC20 token_B;
-
-    // constructor
-    constructor (address addToken_A) {
-       token_A = IERC20(addToken_A);
-       // token-B = IERC20(addToken-B);
-      
+contract TokenB is ERC20 {
+    constructor(uint256 initialSupply) ERC20("TokenB", "TKB") {
+        _mint(msg.sender, initialSupply);
     }
-
 }
