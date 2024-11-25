@@ -326,6 +326,7 @@
 			}
 		],
 		"devdoc": {
+			"details": "Token B contract for Eth course - Hugo Jaca Funciones:      Constructor. Inicializa el token Eventos:      Crear dos tokens ERC-20 simples: Los contrato de los tokens deben tener obligatoriamente los nombres TokenA y TokenB.      Implementar un contrato de exchange (denominado obligatoriamente SimpleDEX) que:         Mantenga un pool de liquidez para TokenA y TokenB.         Utilice la fórmula del producto constante (x+dx)(y-dy) = xy para calcular los precios de intercambio.         Permita añadir y retirar liquidez.         Permita intercambiar TokenA por TokenB y viceversa.      El contrato SimpleDEX debe contar obligatoriamente y sin modificación de la interface con las siguientes funciones:         constructor(address _tokenA, address _tokenB)         addLiquidity(uint256 amountA, uint256 amountB)         swapAforB(uint256 amountAIn)         swapBforA(uint256 amountBIn)         removeLiquidity(uint256 amountA, uint256 amountB)         getPrice(address _token)      Incluir los eventos que consideren convenientes.",
 			"errors": {
 				"ERC20InsufficientAllowance(address,uint256,uint256)": [
 					{
@@ -418,6 +419,7 @@
 					"details": "See {IERC20-transferFrom}. Skips emitting an {Approval} event indicating an allowance update. This is not required by the ERC. See {xref-ERC20-_approve-address-address-uint256-bool-}[_approve]. NOTE: Does not update the allowance if the current allowance is the maximum `uint256`. Requirements: - `from` and `to` cannot be the zero address. - `from` must have a balance of at least `value`. - the caller must have allowance for ``from``'s tokens of at least `value`."
 				}
 			},
+			"title": "TokenB ",
 			"version": 1
 		},
 		"userdoc": {
@@ -428,7 +430,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/TokenB.sol": "TokenB"
+			"contracts/TokenB_flattened.sol": "TokenB"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -442,52 +444,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"@openzeppelin/contracts/interfaces/draft-IERC6093.sol": {
-			"keccak256": "0x880da465c203cec76b10d72dbd87c80f387df4102274f23eea1f9c9b0918792b",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://399594cd8bb0143bc9e55e0f1d071d0d8c850a394fb7a319d50edd55d9ed822b",
-				"dweb:/ipfs/QmbPZzgtT6LEm9CMqWfagQFwETbV1ztpECBB1DtQHrKiRz"
-			]
-		},
-		"@openzeppelin/contracts/token/ERC20/ERC20.sol": {
-			"keccak256": "0xbf61ab2ae1d575a17ea58fbb99ca232baddcc4e0eeea180e84cbc74b0c348b31",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://4e0968705bad99747a8e5288aa008678c2be2f471f919dce3925a3cc4f1dee09",
-				"dweb:/ipfs/QmbAFnCQfo4tw6ssfQSjhA5LzwHWNNryXN8bX7ty8jiqqn"
-			]
-		},
-		"@openzeppelin/contracts/token/ERC20/IERC20.sol": {
-			"keccak256": "0xe06a3f08a987af6ad2e1c1e774405d4fe08f1694b67517438b467cecf0da0ef7",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://df6f0c459663c9858b6cba2cda1d14a7d05a985bed6d2de72bd8e78c25ee79db",
-				"dweb:/ipfs/QmeTTxZ7qVk9rjEv2R4CpCwdf8UMCcRqDNMvzNxHc3Fnn9"
-			]
-		},
-		"@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol": {
-			"keccak256": "0x70f2f713b13b7ce4610bcd0ac9fec0f3cc43693b043abcb8dc40a42a726eb330",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://c13d13304ac79a83ab1c30168967d19e2203342ebbd6a9bbce4db7550522dcbf",
-				"dweb:/ipfs/QmeN5jKMN2vw5bhacr6tkg78afbTTZUeaacNHqjWt4Ew1r"
-			]
-		},
-		"@openzeppelin/contracts/utils/Context.sol": {
-			"keccak256": "0x493033a8d1b176a037b2cc6a04dad01a5c157722049bbecf632ca876224dd4b2",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://6a708e8a5bdb1011c2c381c9a5cfd8a9a956d7d0a9dc1bd8bcdaf52f76ef2f12",
-				"dweb:/ipfs/Qmax9WHBnVsZP46ZxEMNRQpLQnrdE4dK8LehML1Py8FowF"
-			]
-		},
-		"contracts/TokenB.sol": {
-			"keccak256": "0xca58d1cc280e8e4004a70e5999e5e870decaca855cc544caccca5a8e00f9be4d",
+		"contracts/TokenB_flattened.sol": {
+			"keccak256": "0x8a370e3323bbcbbd06dce847bbe03725bf5bbc78596eaaa03fd7e51ed3d4a570",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://e7ac49c641c39e8a84dc552e90cbaf7a311e80a71344e6c760a7b4cf2cdf7e31",
-				"dweb:/ipfs/QmcJCA74tX49HoZathSdqbNyYCuLieEGjdYtcsuPmrdJ8k"
+				"bzz-raw://54b8f40fb7e0e3bd92173082cf6ad56f3ffa4ff90e8e2558952b7a7a452431f9",
+				"dweb:/ipfs/QmUXHLm5ec19M5ATnChYWGPA7PHNjKKTvTVU2oXpqc9umo"
 			]
 		}
 	},

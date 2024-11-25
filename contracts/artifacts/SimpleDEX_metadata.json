@@ -111,8 +111,10 @@
 			}
 		],
 		"devdoc": {
+			"details": "Token contract for Eth course - Hugo Jaca Funciones:      Constructor. Inicializa la subasta con los parámetros necesario para su funcionamiento. Eventos:      Crear dos tokens ERC-20 simples: Los contrato de los tokens deben tener obligatoriamente los nombres TokenA y TokenB.      Implementar un contrato de exchange (denominado obligatoriamente SimpleDEX) que:         Mantenga un pool de liquidez para TokenA y TokenB.         Utilice la fórmula del producto constante (x+dx)(y-dy) = xy para calcular los precios de intercambio.         Permita añadir y retirar liquidez.         Permita intercambiar TokenA por TokenB y viceversa.      El contrato SimpleDEX debe contar obligatoriamente y sin modificación de la interface con las siguientes funciones:         constructor(address _tokenA, address _tokenB)         addLiquidity(uint256 amountA, uint256 amountB)         swapAforB(uint256 amountAIn)         swapBforA(uint256 amountBIn)         removeLiquidity(uint256 amountA, uint256 amountB)         getPrice(address _token)      Incluir los eventos que consideren convenientes.",
 			"kind": "dev",
 			"methods": {},
+			"title": "DEX ",
 			"version": 1
 		},
 		"userdoc": {
@@ -123,7 +125,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Dex.sol": "SimpleDEX"
+			"contracts/Dex_flattened.sol": "SimpleDEX"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -137,20 +139,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"@openzeppelin/contracts/token/ERC20/IERC20.sol": {
-			"keccak256": "0xe06a3f08a987af6ad2e1c1e774405d4fe08f1694b67517438b467cecf0da0ef7",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://df6f0c459663c9858b6cba2cda1d14a7d05a985bed6d2de72bd8e78c25ee79db",
-				"dweb:/ipfs/QmeTTxZ7qVk9rjEv2R4CpCwdf8UMCcRqDNMvzNxHc3Fnn9"
-			]
-		},
-		"contracts/Dex.sol": {
-			"keccak256": "0x30c266c9d1e671a35027627b6fed9ab1e244c2741aaf3da2d832e3fbbaf452e2",
+		"contracts/Dex_flattened.sol": {
+			"keccak256": "0xa3cf76fbfbcbdaa95599cc8f30d46c982fd1f5da053feca68bb8ed295d5e748c",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://06d1298a9238a9717087fb0bec28dff68fd906ba4f97b989a098ca77c2466468",
-				"dweb:/ipfs/QmXnvA4aRa4nBpHEbtGHJpTwWo6LqSxEpumxLSBMrcXVrB"
+				"bzz-raw://832e71b00d49767333fa86d57ff21800c316ea47dc9df082756e77cff14ff35c",
+				"dweb:/ipfs/QmTivwofisyLr1N9VExxzPKdGvFzEhSSB2rR8yx5m3PJ4x"
 			]
 		}
 	},
